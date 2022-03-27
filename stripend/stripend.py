@@ -5,7 +5,7 @@ from collections import Counter
 
 
 def SwapKeysValues(_dict: dict):
-    """Swaps the Keys and Values in Dictionary. 
+    """Swaps the Keys and Values in Dictionary.
 
     Parameters
     ----------
@@ -17,9 +17,10 @@ def SwapKeysValues(_dict: dict):
     swapped_dict : dict
         Returns the Swapped/Reversed Dictionary.
     """
-    swapped_dict =  {value: key for key,value in _dict.items()}
+    swapped_dict = {value: key for key, value in _dict.items()}
 
     return swapped_dict
+
 
 def MergeDicts(*_dicts: dict):
     """Merges numerous dictionaries into just one.
@@ -34,7 +35,8 @@ def MergeDicts(*_dicts: dict):
     merge_dicts : dict
         Returns the Merged Dictionary.
     """
-    return {key : value for d in _dicts for key, value in d.items()}
+    return {key: value for d in _dicts for key, value in d.items()}
+
 
 def StringIsEmpty(string: str):
     """Checks to see whether the string is empty.
@@ -47,13 +49,14 @@ def StringIsEmpty(string: str):
     Returns
     -------
     is_empty : str
-        Checks the length of the string and 
+        Checks the length of the string and
         Returns `True` if the string is empty, else `False`.
     """
-    
+
     is_empty = bool(len(string) <= 0)
 
     return is_empty
+
 
 def AnyCharMatches(substring: str, mainString: str):
     """Scans the string for any matches a certain pattern.
@@ -62,7 +65,7 @@ def AnyCharMatches(substring: str, mainString: str):
     ----------
     substring : str
         The string that is used to find matches from `mainString`.
-        
+
     mainString : str
         The `mainstring` which contains the original string.
 
@@ -71,9 +74,10 @@ def AnyCharMatches(substring: str, mainString: str):
     is_matching : bool
         Returns `True` if the `substring` matches with the `mainSting` else `False`.
     """
-    is_matching =  bool(re.search(substring, mainString))
+    is_matching = bool(re.search(substring, mainString))
 
     return is_matching
+
 
 def HasUniqueElements(_list: Union[list, tuple]):
     """Determines whether or not the items of a list are unique.
@@ -86,18 +90,19 @@ def HasUniqueElements(_list: Union[list, tuple]):
     Returns
     -------
     is_unique : bool
-        Returns `True` if the items of the lists are unique, else `False`.    
+        Returns `True` if the items of the lists are unique, else `False`.
     """
     is_unique = len(set(_list)) == len(_list)
-    
+
     return is_unique
 
-def MethodSource(method):  
+
+def MethodSource(method):
     """Returns the Source Code of an object/method.
 
     Parameters
     ----------
-    method : function 
+    method : function
         The method or function that will be used to retrieve the source code.
 
     Returns
@@ -105,9 +110,10 @@ def MethodSource(method):
     source_code : str
         The source code of the method.
     """
-    source_code =  "".join(inspect.getsourcelines(method)[0])
+    source_code = "".join(inspect.getsourcelines(method)[0])
 
     return source_code
+
 
 def MergeList(*_list: list):
     """Combines multiple lists into a new one.
@@ -126,8 +132,9 @@ def MergeList(*_list: list):
 
     for list in _list:
         merged_list.extend(iter(list))
-    
+
     return merged_list
+
 
 def FindKeyByValue(_dict: dict, value: str):
     """Finds the Key by using the value in the dictionary.
@@ -145,9 +152,10 @@ def FindKeyByValue(_dict: dict, value: str):
     dict_key : str
         Returns the Dictionary's Key based on the Value.
     """
-    dict_key =  list(_dict.keys())[list(_dict.values()).index(value)]
+    dict_key = list(_dict.keys())[list(_dict.values()).index(value)]
 
     return dict_key
+
 
 def FlattenList(_list: list):
     """Flattens a nested list properly.
@@ -162,9 +170,10 @@ def FlattenList(_list: list):
     flattened_list : list
         Returns the flattened list.
     """
-    flatten_list =  itertools.chain(*_list)
+    flatten_list = itertools.chain(*_list)
 
     return flatten_list
+
 
 def RepeatedValue(content: Union[str, list, tuple]):
     """Finds the most frequently common value.
@@ -180,11 +189,12 @@ def RepeatedValue(content: Union[str, list, tuple]):
         Returns the Repeated Value.
     """
     if type(content) == str:
-        return max(set(list(content)), key = content.count) 
+        return max(set(list(content)), key=content.count)
 
-    repeated_value =  max(set(content), key = content.count) 
+    repeated_value = max(set(content), key=content.count)
 
-    return repeated_value 
+    return repeated_value
+
 
 def ReverseText(_char: str):
     """Returns the text in reverse order.
@@ -200,6 +210,7 @@ def ReverseText(_char: str):
         Returns the reversed string.
     """
     return _char[::-1]
+
 
 def CheckPrefix(prefix: Union[str, tuple, list], content: str):
     """Determines whether or not the prefix matches the content.
@@ -221,6 +232,7 @@ def CheckPrefix(prefix: Union[str, tuple, list], content: str):
 
     return starts_with_prefix
 
+
 def MostCommon(content: Union[str, list, tuple]):
     """Finds the top three most commonly given values.
 
@@ -234,6 +246,6 @@ def MostCommon(content: Union[str, list, tuple]):
     common_elements : list
         Returns a list containing the three most common values.
     """
-    common_elements =  Counter(content).most_common(3)
+    common_elements = Counter(content).most_common(3)
 
     return common_elements
