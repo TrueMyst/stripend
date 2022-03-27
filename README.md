@@ -1,6 +1,6 @@
-# stripend 0.1.0
+# stripend 0.1.1
 
-<p align = "center"><img width="750" height="350" src="./utils/stripend.png"></p>
+<p align = "center"><img width="750" height="350" src="https://i.imgur.com/O0r8lYo.png"></p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -49,18 +49,18 @@ To import the Module, you can do like this -
 # Use "HasUniqueElements" to check whether a list has any unique items.
 >>> random_list = ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
->>> print(HasUniqueElements(random_list))
+>>> print(stripend.HasUniqueElements(random_list))
 >>> True 
 
 # Use "Flattenlist()" to flatten a nested list.
 >>> nested_list = [["Banana", "Apple"], ["Orange"], ["Cherry", "Blueberry"]]
 
->>> print(FlattenList(nested_list))
+>>> print(stripend.FlattenList(nested_list))
 >>> ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
 >>> xyz = {"Say" : "1", "Hello" : "2", "World" : "3"}
 
->>> print(FindKeyByValue(xyz, "2"))
+>>> print(stripend.FindKeyByValue(xyz, "2"))
 >>> 'Hello'
 ```
 
