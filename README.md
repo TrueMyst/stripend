@@ -1,4 +1,4 @@
-# stripend 0.1.1
+# stripend 0.1.2
 
 <p align = "center"><img width="750" height="350" src="https://i.imgur.com/O0r8lYo.png"></p>
 
@@ -17,7 +17,9 @@ A Python module that includes utility methods for making your code shorter, more
 
 ## `0` Updates
 - New features: 
-    - Added `MostCommon()` function.
+    - The function names have been changed to Snake Case.
+    - Changed `MostCommon()` function to `most_common_items()`
+
 - Bug Fixes 
 
 
@@ -49,18 +51,18 @@ To import the Module, you can do like this -
 # Use "HasUniqueElements" to check whether a list has any unique items.
 >>> random_list = ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
->>> print(stripend.HasUniqueElements(random_list))
+>>> print(stripend.has_unique_elements(random_list))
 >>> True 
 
 # Use "Flattenlist()" to flatten a nested list.
 >>> nested_list = [["Banana", "Apple"], ["Orange"], ["Cherry", "Blueberry"]]
 
->>> print(stripend.FlattenList(nested_list))
+>>> print(stripend.flatten_list(nested_list))
 >>> ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
 >>> xyz = {"Say" : "1", "Hello" : "2", "World" : "3"}
 
->>> print(stripend.FindKeyByValue(xyz, "2"))
+>>> print(stripend.find_key_by_value(xyz, "2"))
 >>> 'Hello'
 ```
 
@@ -69,13 +71,13 @@ To import the Module, you can do like this -
 
 The following functions are currently available:
 
-|                | **Available Functions** |               |
-| :--------      | :----------------       | :------------ |
-| SwapKeysValues | MergeDicts              | StringIsEmpty |
-| AnyCharMatches | HasUniqueElements       | MethodSource  |
-| MergeList      | FindKeyByValue          | FlattenList   |
-| RepeatedValue  | ReverseText             | CheckPrefix   |
-| MostCommon     |         -               |       -       |
+|                   | **Available Functions** |                 |
+| :--------         | :----------------       | :------------   |
+| swap_keys_values  | merge_dicts             | string_is_empty |
+| any_char_matches  | has_unique_elements     | method_source   |
+| merge_list        | find_key_by_value       | flatten_list    |
+| repeated_value    | reverse_text            | check_prefix    |
+| most_common_items |         -               |       -         |
 
 
 ## `4` Feedback

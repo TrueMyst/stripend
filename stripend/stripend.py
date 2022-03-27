@@ -4,7 +4,7 @@ from typing import Union
 from collections import Counter
 
 
-def SwapKeysValues(_dict: dict):
+def swap_keys_values(_dict: dict):
     """Swaps the Keys and Values in Dictionary.
 
     Parameters
@@ -22,7 +22,7 @@ def SwapKeysValues(_dict: dict):
     return swapped_dict
 
 
-def MergeDicts(*_dicts: dict):
+def merge_dicts(*_dicts: dict):
     """Merges numerous dictionaries into just one.
 
     Parameters
@@ -38,7 +38,7 @@ def MergeDicts(*_dicts: dict):
     return {key: value for d in _dicts for key, value in d.items()}
 
 
-def StringIsEmpty(string: str):
+def string_is_empty(string: str):
     """Checks to see whether the string is empty.
 
     Parameters
@@ -58,7 +58,7 @@ def StringIsEmpty(string: str):
     return is_empty
 
 
-def AnyCharMatches(substring: str, mainString: str):
+def any_char_matches(substring: str, mainString: str):
     """Scans the string for any matches a certain pattern.
 
     Parameters
@@ -79,7 +79,7 @@ def AnyCharMatches(substring: str, mainString: str):
     return is_matching
 
 
-def HasUniqueElements(_list: Union[list, tuple]):
+def has_unique_elements(_list: Union[list, tuple]):
     """Determines whether or not the items of a list are unique.
 
     Parameters
@@ -97,7 +97,7 @@ def HasUniqueElements(_list: Union[list, tuple]):
     return is_unique
 
 
-def MethodSource(method):
+def method_source(method):
     """Returns the Source Code of an object/method.
 
     Parameters
@@ -115,7 +115,7 @@ def MethodSource(method):
     return source_code
 
 
-def MergeList(*_list: list):
+def merge_list(*_list: list):
     """Combines multiple lists into a new one.
 
     Parameters
@@ -136,7 +136,7 @@ def MergeList(*_list: list):
     return merged_list
 
 
-def FindKeyByValue(_dict: dict, value: str):
+def find_key_by_value(_dict: dict, value: str):
     """Finds the Key by using the value in the dictionary.
 
     Parameters
@@ -157,7 +157,7 @@ def FindKeyByValue(_dict: dict, value: str):
     return dict_key
 
 
-def FlattenList(_list: list):
+def flatten_list(_list: list):
     """Flattens a nested list properly.
 
     Parameters
@@ -175,7 +175,7 @@ def FlattenList(_list: list):
     return flatten_list
 
 
-def RepeatedValue(content: Union[str, list, tuple]):
+def repeated_value(content: Union[str, list, tuple]):
     """Finds the most frequently common value.
 
     Parameters
@@ -196,7 +196,7 @@ def RepeatedValue(content: Union[str, list, tuple]):
     return repeated_value
 
 
-def ReverseText(_char: str):
+def reverse_text(_char: str):
     """Returns the text in reverse order.
 
     Parameters
@@ -212,7 +212,7 @@ def ReverseText(_char: str):
     return _char[::-1]
 
 
-def CheckPrefix(prefix: Union[str, tuple, list], content: str):
+def check_prefix(prefix: Union[str, tuple, list], content: str):
     """Determines whether or not the prefix matches the content.
 
     Parameters
@@ -233,7 +233,7 @@ def CheckPrefix(prefix: Union[str, tuple, list], content: str):
     return starts_with_prefix
 
 
-def MostCommon(content: Union[str, list, tuple]):
+def most_common_items(content: Union[str, list, tuple]):
     """Finds the top three most commonly given values.
 
     Parameters

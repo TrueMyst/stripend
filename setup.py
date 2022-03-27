@@ -15,7 +15,7 @@ classifiers = [
 
 setup(
     name="stripend",
-    version="0.1.1",
+    version="0.1.2",
     description="A Python module that includes utility methods for making your code shorter, more flexible, and smarter.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -24,6 +24,6 @@ setup(
     author="TrueMyst",
     license="MIT",
     classifiers=classifiers,
-    keywords=["utilities", "utils", "python", "code", ""],
+    keywords=["utilities", "utils", "python", "code", "pyutils"],
     packages=setuptools.find_packages(),
 )

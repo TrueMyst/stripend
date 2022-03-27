@@ -50,18 +50,18 @@ To import the Module, you can do like this -
    # Use "HasUniqueElements" to check whether a list has any unique items.
    >>> random_list = ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
-   >>> print(HasUniqueElements(random_list))
+   >>> print(stripend.has_unique_elements(random_list))
    >>> True 
 
    # Use "Flattenlist()" to flatten a nested list.
    >>> nested_list = [["Banana", "Apple"], ["Orange"], ["Cherry", "Blueberry"]]
 
-   >>> print(FlattenList(nested_list))
+   >>> print(stripend.flatten_list(nested_list))
    >>> ["Banana", "Apple", "Orange", "Cherry", "Blueberry"]
 
    >>> xyz = {"Say" : "1", "Hello" : "2", "World" : "3"}
 
-   >>> print(FindKeyByValue(xyz, "2"))
+   >>> print(stripend.find_key_by_value(xyz, "2"))
    >>> 'Hello'
 
 ``3`` Available Functions
@@ -69,15 +69,15 @@ To import the Module, you can do like this -
 
 The following functions are currently available:
 
-============== ======================= =============
-\              **Available Functions** 
-============== ======================= =============
-SwapKeysValues MergeDicts              StringIsEmpty
-AnyCharMatches HasUniqueElements       MethodSource
-MergeList      FindKeyByValue          FlattenList
-RepeatedValue  ReverseText             CheckPrefix
-MostCommon     -                       -
-============== ======================= =============
+================= ======================= ===============
+\                 **Available Functions** 
+================= ======================= ===============
+swap_keys_values  merge_dicts             string_is_empty
+any_char_matches  has_unique_elements     method_source
+merge_list        find_key_by_value       flatten_list
+repeated_value    reverse_text            check_prefix
+most_common_items -                       -
+================= ======================= ===============
 
 ``4`` License
 -------------
@@ -86,7 +86,7 @@ MostCommon     -                       -
 the MIT license.
 
 ``5`` Documentation
--------------
+-------------------
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents 🧾
